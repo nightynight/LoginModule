@@ -1,0 +1,16 @@
+#header{
+    background-color: #fff;
+    border-bottom: solid 1px #ddd;
+    height: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.img_icon{
+    width: 34px;
+    height: 34px;
+}
+select option{
+    display: block;
+    padding: 5px;
+    margin-top: 20px;
+}

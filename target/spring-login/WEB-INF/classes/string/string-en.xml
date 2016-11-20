@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+    <string id="siteName">SiteName</string>
+    <package id="login">
+        <string id="wrongVerifyCode">wrong verify code</string>
+        <string id="wrongPassword">wrong password</string>
+        <string id="accountNotExist">the account is not exist</string>
+        <string id="emailHasBeenUsed">this email has been used</string>
+        <string id="emailNotUsed">this email has not been used</string>
+        <string id="usernameHasBeenUsed">this username has been used</string>
+        <string id="usernameCanNotEmpry">username can not be empty</string>
+        <string id="error">error</string>
+        <string id="passwordNotAvailable">password is not available</string>
+        <string id="passwordNotSame">password not same</string>
+        <string id="pleaseActivate">please activate</string>
+        <string id="activateCodeExpire">activate code expire</string>
+        <string id="validateCodeExpire">validate code expire</string>
+        <string id="activated">activated</string>
+        <string id="activateCodeNotCorrect">activate code not correct</string>
+        <string id="validateCodeNotCorrect">validate code not correct</string>
+        <string id="validateCodeNotAvailable">validate code not available， please send again</string>
+        <string id="emailNotAvailable">email not available</string>
+
+        <string id="Chinese">Chinese</string>
+        <string id="English">English</string>
+
+        <string id="nicknamePlaceholder">nickname</string>
+        <string id="usernamePlaceholder">username</string>
+        <string id="passwordPlaceholder">password</string>
+        <string id="passwordConfirmPlaceholder">password confirm</string>
+        <string id="emailPlaceholder">email</string>
+        <string id="phonePlaceholder">phone</string>
+        <string id="validateCodePlaceholder">validate code</string>
+        <string id="usernameOrEmailPlaceholder">username/email</string>
+
+        <string id="login">Sign in</string>
+        <string id="register">Sign up</string>
+        <string id="logout">Sign out</string>
+        <string id="sendValidateCode">send validate code</string>
+        <string id="resetPassword">reset password</string>
+        <string id="forgetPassword">forget password</string>
+        <string id="sendAgain">send again</string>
+        <string id="emailCanNotEmpty">email can not be empty</string>
+        <string id="keepPassword">keep password</string>
+        <string id="changeVerifyCode">change verify code</string>
+
+        <!--网页内容-->
+        <string id="resetPasswordPageTitle">reset password</string>
+        <string id="loginPageTitle">Sign in SiteName</string>
+        <string id="registerPageTitle">Join SiteName</string>
+    </package>
+</strings>

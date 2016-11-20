@@ -1,0 +1,72 @@
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.gray{
+    color: gray;
+}
+.hideWithPos{
+    visibility: hidden;
+}
+.clickSpan{
+    color: cornflowerblue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.clickSpan:hover{
+    color: #03a;
+}
+.noMargin{
+    margin: 0px;
+}
+.inlineBlock{
+    display: inline-block;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+.width-95{
+    width: 95%;
+}
+.width-90{
+    width: 90%;
+}
+.width-85{
+    width: 85%;
+}
+.width-80{
+    width: 80%;
+}
+.width-75{
+    width: 75%;
+}
+.width-70{
+    width: 70%;
+}
+.width-60{
+    width: 60%;
+}
+.width-55{
+    width: 55%;
+}
+.width-50{
+    width: 50%;
+}
+.width-45{
+    width: 45%;
+}
+.width-40{
+    width: 40%;
+}
+.width-35{
+    width: 35%;
+}
+
+.small{
+    font-size: 60%;
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+规则：
+ 1.此文件名必须为string-xx.xml，xx表示某种语言的简称，如“zh”、“en“
+ 2.根节点为strings
+ 3.根节点下可以放package节点、string节点、array节点
+ 4.string节点为末节点，不能放其他节点；array节点中只能放string节点；package节点中可以放以上三种节点
+ 如下面就是一个合法的例子：
+    <package id="test">
+        <package id="test1">
+            <string id="mm">买买买</string>
+        </package>
+        <package id="test2">
+
+        </package>
+        <string id="hello">你好</string>
+        <string id="bye">再见</string>
+        <array id="week">
+            <string>星期一</string>
+            <string>星期二</string>
+            <string>星期三</string>
+            <string>星期四</string>
+            <string>星期五</string>
+            <string>星期六</string>
+            <string>星期日</string>
+        </array>
+    </package>
+-->
+<strings>
+    <string id="siteName">SiteName</string>
+    <package id="login">
+        <string id="wrongVerifyCode">验证码错误</string>
+        <string id="wrongPassword">密码错误</string>
+        <string id="accountNotExist">用户不存在</string>
+        <string id="emailHasBeenUsed">该邮箱已经使用过了</string>
+        <string id="emailNotUsed">该邮箱还没有注册</string>
+        <string id="usernameHasBeenUsed">用户名不可用</string>
+        <string id="usernameCanNotEmpry">用户名不能为空</string>
+        <string id="error">错误</string>
+        <string id="passwordNotAvailable">密码不符合要求</string>
+        <string id="passwordNotSame">两次输入的密码不一致</string>
+        <string id="pleaseActivate">请激活</string>
+        <string id="activateCodeExpire">激活码已过期</string>
+        <string id="validateCodeExpire">验证码已过期</string>
+        <string id="activated">该账号已激活，请登录</string>
+        <string id="activateCodeNotCorrect">激活码不正确</string>
+        <string id="validateCodeNotCorrect">验证码不正确</string>
+        <string id="validateCodeNotAvailable">验证码无效，请重新发送</string>
+        <string id="emailNotAvailable">该邮箱无效</string>
+        <string id="emailCanNotEmpty">邮箱不能为空</string>
+
+        <string id="Chinese">中文</string>
+        <string id="English">英文</string>
+
+        <string id="nicknamePlaceholder">昵称</string>
+        <string id="usernamePlaceholder">用户名</string>
+        <string id="passwordPlaceholder">密码</string>
+        <string id="passwordConfirmPlaceholder">确认密码</string>
+        <string id="emailPlaceholder">邮箱</string>
+        <string id="phonePlaceholder">电话</string>
+        <string id="validateCodePlaceholder">验证码</string>
+        <string id="usernameOrEmailPlaceholder">用户名/邮箱</string>
+
+        <string id="login">登录</string>
+        <string id="register">注册</string>
+        <string id="logout">退出登录</string>
+        <string id="sendValidateCode">发送验证码</string>
+        <string id="resetPassword">重置密码</string>
+        <string id="forgetPassword">忘记密码</string>
+        <string id="sendAgain">重新发送</string>
+        <string id="keepPassword">记住密码</string>
+        <string id="changeVerifyCode">换一张</string>
+
+        <!--网页内容-->
+        <string id="resetPasswordPageTitle">重置密码</string>
+        <string id="loginPageTitle">登录SiteName</string>
+        <string id="registerPageTitle">加入SiteName</string>
+    </package>
+</strings>

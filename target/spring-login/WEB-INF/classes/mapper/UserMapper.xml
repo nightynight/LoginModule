@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace命名空间,作用就是对sql进行分类化管理,理解sql隔离
+注意:使用mapper代理方法开发,namespace有特殊重要的作用,namespace等于mapper接口地址-->
+<mapper namespace="com.brokepal.dao.UserDao">
+
+    <!--mapper作用:为DAO接口方法提供sql语句配置-->
+
+    <insert id="createUser" parameterType="User">
+        INSERT INTO t_user (nickname,username,password,email,phone,activate_code,salt)
+        VALUES (#{nickname},#{username},#{password},#{email},#{phone},#{activateCode},#{salt})
+    </insert>
+
+    <update id="updateUser" parameterType="User">
+        UPDATE t_user
+        SET nickname=#{nickname}, password=#{password}, email=#{email}, phone=#{phone}, validate_code=NULL, status=1
+        WHERE username=#{username}
+    </update>
+
+    <select id="getUserByUsername" parameterType="String" resultType="User">
+        SELECT nickname,username,password,salt,email,phone,register_time,status,activate_code,send_activate_code_time,validate_code,send_validate_code_time FROM t_user
+        WHERE username=#{username}
+    </select>
+
+    <select id="getUserByEmail" parameterType="String" resultType="User">
+        SELECT nickname,username,password,salt,email,phone,register_time,status,activate_code,send_activate_code_time,validate_code,send_validate_code_time FROM t_user
+        WHERE email=#{email}
+    </select>
+
+    <update id="updateStatus">
+        UPDATE t_user
+        SET status=#{status}
+        WHERE email=#{email}
+    </update>
+
+    <update id="updateActivateCodeAndTime">
+        UPDATE t_user
+        SET activate_code=#{activateCode},send_activate_code_time=#{sendActivateCodeTime}
+        WHERE email=#{email}
+    </update>
+
+    <update id="updateValidateCodeAndTime">
+        UPDATE t_user
+        SET validate_code= #{validateCode},send_validate_code_time=#{sendValidateCodeTime}
+        WHERE email=#{email}
+    </update>
+</mapper>
